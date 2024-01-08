@@ -9,7 +9,7 @@ export function ContactForm() {
 
   const dispatch = useDispatch();
 
-  const contacts = useSelector(state => state.contacts.contacts);
+  const contacts = useSelector(state => state.contacts.items);
 
   const onInputChange = e => {
     const { name, value } = e.target;

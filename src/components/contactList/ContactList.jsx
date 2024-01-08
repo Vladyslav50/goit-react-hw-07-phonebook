@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import css from '../App.module.css';
 
 export const ContactList = ({ onDelit }) => {
-  const contacts = useSelector(state => state.contacts.contacts);
+  const contacts = useSelector(state => state.contacts.items);
   return (
     <ul>
       {contacts &&
